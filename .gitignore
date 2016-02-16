@@ -35,3 +35,6 @@ jspm_packages
 
 #Mongo Db Data Directory
 data
+
+#bowerlibs
+client/libs
