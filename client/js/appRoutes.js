@@ -13,6 +13,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
       .when('/nerds', {
           templateUrl: 'views/nerd.html',
           controller: 'NerdController'
+      })
+      //pepole and the people controller
+      .when('/people', {
+        templateUrl: '../app/people/people.html',
+        controller: 'PeopleController',
+        controllerAs: 'PeopleCtrl'
       });
   
   $locationProvider.html5Mode(true);

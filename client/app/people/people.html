@@ -1,0 +1,28 @@
+<div class="jumbotron text-center">
+  <h1>People and Proud</h1>
+
+  <p>{{ PeopleCtrl.tagline }}</p>
+  
+  
+  <button ng-click="PeopleCtrl.debug('I pressed it')">
+  Press It and view the Console
+  </button>
+  
+  
+  <table class="table table-striped">
+    	<thead>
+    	<tr>
+    		<th class="icon-header">Edit</th>
+    		<th>Name</th>
+    	</tr>
+    	</thead>
+    	<tbody>
+    	<tr ng-repeat="people in PeopleCtrl.rec">
+    		<td class="icon-content"><a class="btn" ng-click=""><i class="fa fa-pencil-square-o"></i></a></td>
+    		<td>{{people.name}}</td>
+    	</tr>
+    	</tbody>
+    </table>
+  
+  
+</div>
